@@ -1,12 +1,16 @@
 import React from 'react';
 import { AppBar, Toolbar as MaterialToolbar, Typography } from '@material-ui/core';
 
-const Toolbar = () => {
+interface ToolbarProps {
+  readonly title: string;
+}
+
+const Toolbar = (props: ToolbarProps) => {
   return (
     <AppBar position="sticky">
         <MaterialToolbar>
           <Typography variant="h6">
-            Users
+            {props.title}
           </Typography>
         </MaterialToolbar>
       </AppBar>

@@ -9,7 +9,7 @@ const App: React.FC = () => {
   const presenter = new UsersListPresenter(factory());
   return (
     <div className="App">
-      <Toolbar/>
+      <Toolbar title="Users"/>
       <UsersListViewController presenter={presenter}/>
     </div>
   );
